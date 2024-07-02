@@ -1,0 +1,29 @@
+http POST http://localhost:5000/api/generate_credentials client_name="YourClientName"
+http POST http://localhost:5000/api/request_access_token client_id=x2BZNAcbqMSXvw jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiYWJfYjg5MTBkODc5M2U0ODk0NmQwOTU1IiwiZXhwIjoxNzE5OTEzMjUxfQ._RntsQrU-MuHDNTqIFIZBQavELtRTwLEIVP-a5nJOOk
+
+http GET http://localhost:5000/api/data \
+     Authorization:'Bearer Rnq8_DLzYydd9p7_9IVPhw'
+
+
+
+
+
+curl -X POST -H "Content-Type: application/json" -d '{"client_id": "4PM0AEmWmmQTRv57KbdYfMCr", "client_secret": "EYoQs0HgiP6j1iEJED7rJfGkRoSiR2SstEdhHeef9q1E5IGt"}' http://127.0.0.1:5000/api/get_access_token
+
+curl -X POST -H "Content-Type: application/json" -d '{"client_name": "example_client"}'
+
+curl -X POST http://localhost:5000/api/request_access_token \
+     -H "Content-Type: application/json" \
+     -d '{
+           "client_id": "gijgU0OqkEitEA",
+           "jwt_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiYWJfNDk1YWRkM2UzMDU1N2I2MWJmZmU4IiwiZXhwIjoxNzE5Mjk3NTkwfQ.UpqarVmkHxHbrl0nLmPqJxOnUfqkVVGT8fxIEbXZ8qE"
+         }'
+
+curl -X GET http://localhost:5000/api/data -H "Authorization: Bearer tqdyVv4L561BxjYTteP4_g"
+
+
+pip show httpie
+export PATH="/Users/macbook/Library/Python/3.9/bin:$PATH"
+source ~/.zshrc
+echo $PATH
+http --version
