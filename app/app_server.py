@@ -354,6 +354,3 @@ def get_data(reference_id):
 # Register Blueprints
 app.register_blueprint(credentials_bp)
 app.register_blueprint(tokens_bp)
-
-if __name__ == '__main__':
-    app.run(debug=True)
