@@ -1,0 +1,14 @@
+Flask
+google-ai-generativelanguage
+google-generativeai
+PyMySQL
+pyjwt
+python-dotenv
+PyPDF2
+langchain
+langchain-google-genai
+pyOpenSSL
+scrypt
+langchain-community
+faiss
+faiss-cpu
